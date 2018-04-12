@@ -47,26 +47,7 @@ class MaterializeHtmlHelper extends HtmlHelper {
         $string = Hash::get($params, 0, '');
         $options = Hash::get($params, 1, []);
 
-        if (preg_match('/^h(?<n>[1-6])$/', $tag, $matches)) {
-            return $this->hn($matches['n'], $string, $options);
-        }
-
         return $this->tag($tag, $string, $options);
-
-    }
-
-    public function hn($n, $string, $options = []) {
-
-        return $this->tag(
-            'div',
-            $this->tag(
-                'div',
-                $this->tag(
-                    'h' . $n, ($string ?: '&nbsp;'), $options),
-                ['class' => 'col s12']
-            ),
-            ['class' => 'row']
-        );
 
     }
 
