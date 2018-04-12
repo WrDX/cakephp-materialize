@@ -1,0 +1,15 @@
+{
+    "name": "wrdx/cakephp-materialize",
+    "description": "Collection of CakePHP 2.x Helpers for MaterializeCSS",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WrDX",
+            "homepage": "https://wrdx.io"
+        }
+    ],
+    "extra": {
+        "installer-name": "Materialize"
+    }
+}
