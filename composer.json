@@ -9,6 +9,9 @@
             "homepage": "https://wrdx.io"
         }
     ],
+    "require": {
+        "composer/installers": "^1.0.0"
+    },
     "extra": {
         "installer-name": "Materialize"
     }
